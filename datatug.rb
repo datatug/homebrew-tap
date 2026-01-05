@@ -5,21 +5,21 @@
 class Datatug < Formula
   desc "DataTug – Context-aware data viewer & collaborative query manager for effortless exploration of related data — CLI + Web UI"
   homepage "https://github.com/datatug/datatug-cli"
-  version "0.0.12"
+  version "0.0.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.12/datatug_0.0.12_darwin_amd64.tar.gz"
-      sha256 "264156e1287d276f1fcbaea2db946b90105ba44a9160225c8720862bf6942b1d"
+      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.13/datatug_0.0.13_darwin_amd64.tar.gz"
+      sha256 "bf04bfef7f5af90f3fa5b68cba21f8f6893ac5710d1cd1bed07481aebc13dbb0"
 
       def install
         bin.install "datatug"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.12/datatug_0.0.12_darwin_arm64.tar.gz"
-      sha256 "4a297a6a734eb7bd7c9435c044922cf2625bdeeae8a0a987758a7a6c79b6f1a6"
+      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.13/datatug_0.0.13_darwin_arm64.tar.gz"
+      sha256 "9fb8ea7923c14aa3a3cb42c5ba0ed6011958b3318dd5157f697c7a0dcdf01fb2"
 
       def install
         bin.install "datatug"
@@ -29,15 +29,15 @@ class Datatug < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.12/datatug_0.0.12_linux_amd64.tar.gz"
-      sha256 "2dd0cd1bf1ebc2443dfb7483f586df0fc77bd0020253b358c9cd15709472a431"
+      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.13/datatug_0.0.13_linux_amd64.tar.gz"
+      sha256 "dfb461985f708eefd2bea801971d0950708bc655902a7d5603ff2c3f9177861b"
       def install
         bin.install "datatug"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.12/datatug_0.0.12_linux_arm64.tar.gz"
-      sha256 "20f03984c5e965b2975ac64bab387fb4f5347018c09f08c9d5d20c74a521d056"
+      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.13/datatug_0.0.13_linux_arm64.tar.gz"
+      sha256 "8c3ad8a811492d55568b46f37e7a72cf0184058d26dd126317d48d8cbb08414f"
       def install
         bin.install "datatug"
       end
