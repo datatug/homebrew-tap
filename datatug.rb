@@ -5,23 +5,23 @@
 class Datatug < Formula
   desc "DataTug – Context-aware data viewer & collaborative query manager for effortless exploration of related data — CLI + Web UI"
   homepage "https://github.com/datatug/datatug-cli"
-  version "0.0.14"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.14/datatug_0.0.14_darwin_amd64.tar.gz"
-      sha256 "295b6460ed627a5bd29ab2881905b6d7a19d8eeeb07ec03f7b0c3a0489e50c47"
+      url "https://github.com/datatug/datatug-cli/releases/download/v0.1.0/datatug_0.1.0_darwin_amd64.tar.gz"
+      sha256 "24dfc0630c6efdcbafa601e40e0401eb2766c35f5d29e7c48ae898bfcc4d912a"
 
-      def install
+      define_method(:install) do
         bin.install "datatug"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.14/datatug_0.0.14_darwin_arm64.tar.gz"
-      sha256 "de9cf5bd69a13c330e0ffdd7474fb2bfefaf22b571f9fb969d8cd155ad693f16"
+      url "https://github.com/datatug/datatug-cli/releases/download/v0.1.0/datatug_0.1.0_darwin_arm64.tar.gz"
+      sha256 "b0345a24ae24c0adfb1d592e1629c215b080f65a32d2035a13f2822d4095b9aa"
 
-      def install
+      define_method(:install) do
         bin.install "datatug"
       end
     end
@@ -29,16 +29,16 @@ class Datatug < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.14/datatug_0.0.14_linux_amd64.tar.gz"
-      sha256 "0e152696bf90a9fd960b5f8fabd14782d1d8a074ca53a88d8108571aa7797953"
-      def install
+      url "https://github.com/datatug/datatug-cli/releases/download/v0.1.0/datatug_0.1.0_linux_amd64.tar.gz"
+      sha256 "25652c81ce3c0b63df0b10ab5e67b4678b27350e1bf8c51945fc51e7dd255e30"
+      define_method(:install) do
         bin.install "datatug"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datatug/datatug-cli/releases/download/v0.0.14/datatug_0.0.14_linux_arm64.tar.gz"
-      sha256 "37ba82874c094a530f78d8580e2bcda82cd0053177a6fe7a653dfafb1bfdb231"
-      def install
+      url "https://github.com/datatug/datatug-cli/releases/download/v0.1.0/datatug_0.1.0_linux_arm64.tar.gz"
+      sha256 "736aefd3860fde6a42c97cba20abc877c55cdaa4a0a6c4a36712ab8299c96637"
+      define_method(:install) do
         bin.install "datatug"
       end
     end
