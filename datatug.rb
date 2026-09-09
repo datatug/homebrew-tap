@@ -6,7 +6,7 @@ class Datatug < Formula
   desc "DataTug – Context-aware data viewer & collaborative query manager for effortless exploration of related data — CLI + Web UI"
   homepage "https://github.com/datatug/datatug-cli"
   version "0.8.0"
-  license "MIT"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
