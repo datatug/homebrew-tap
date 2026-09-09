@@ -27,6 +27,8 @@ cask "datatug" do
   desc "DataTug – Context-aware data viewer & collaborative query manager for effortless exploration of related data — CLI + Web UI"
   homepage "https://github.com/datatug/datatug-cli"
 
+  license "Apache-2.0"
+
   livecheck do
     skip "Auto-generated on release."
   end
