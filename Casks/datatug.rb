@@ -1,24 +1,24 @@
 # Generated from verified DataTug release artifacts. DO NOT EDIT.
 cask "datatug" do
-  version "0.152.0"
+  version "0.152.1"
 
   on_macos do
     on_arm do
-      sha256 "ded9a47658d16fc7300564ff5a85fd6cf2937f51718ab6ae4e51939ba76c1a66"
+      sha256 "a4ad705175ac12db0678f041449e0010abcfe859ed488f902ddbe3ae25a599d0"
       url "https://github.com/datatug/datatug/releases/download/v#{version}/datatug_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "111d5ae1fb93aa32acee9fb22e09220b37bdb56fa39591987a31f42c97bb6958"
+      sha256 "49318405c1376491afa742982a0eabca2cc4681d57e61046dddbda41a8885f8c"
       url "https://github.com/datatug/datatug/releases/download/v#{version}/datatug_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "d7b02e452cdb2b80788cdd1844310e42cd34232ab9397b0adf3765ad73ac8f5b"
+      sha256 "f35e8038144911d401b1274806e487b1fedf4cefa0ea60c1649560b8b394e420"
       url "https://github.com/datatug/datatug/releases/download/v#{version}/datatug_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "844f47ea33474ec412c9b091c1dd5530d1a2a34eb3ea9d77d683859b0b2a27af"
+      sha256 "e141487ed2b8756124c1ee272023269fddf412ee8701d82924036edefd01df4f"
       url "https://github.com/datatug/datatug/releases/download/v#{version}/datatug_#{version}_linux_amd64.tar.gz"
     end
   end
